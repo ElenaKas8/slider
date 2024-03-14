@@ -55,3 +55,34 @@
 .triggers > button:hover {
     opacity: 0.6;
 }
+
+.slider_btns{
+    position: absolute;
+    width: 100%;
+    height: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    bottom: 0;
+}
+
+.round_btn{
+    width: 20px;
+    height: 20px;
+
+    border-radius: 50%;
+    background-color: orange;
+    border: 2px solid black;
+    transition: 250ms;
+}
+
+.round_btn:hover{
+    transform: scale(1.25);
+    box-shadow: 2px 2px 7px;
+}
+
+.round_btn.active{
+    background-color: chocolate;
+}
